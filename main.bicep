@@ -4,6 +4,8 @@ module logic './logicapps.bicep' = {
     microsoftforms_displayName: email
     office365_displayName: email
     visualstudioteamservices_displayName: email
+    azureDevOpsAccount: azureDevOpsAccount
+    buildId: buildId
   }
 }
 
@@ -42,7 +44,14 @@ param token string
 @description('Enter a unique prefix - e.g. mecweb')
 param namePrefix string
 
+@description('Your Azure DevOps Account Name')
+param azureDevOpsAccount string
+
+@description('Your Build Id')
+param buildId string
+
 // Outputs
+output siteName string = staticapp.outputs.siteName
 output siteUrl string = staticapp.outputs.siteUrl
 output endpoint string = logic.outputs.LogicAppEndPoint
 

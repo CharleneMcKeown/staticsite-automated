@@ -41,4 +41,5 @@ resource staticSite 'Microsoft.Web/staticSites@2020-06-01' = {
 }
 
 // Output
+output siteName string = staticSite.name
 output siteUrl string = staticSite.properties.defaultHostname

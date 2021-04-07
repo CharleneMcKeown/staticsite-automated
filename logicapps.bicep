@@ -12,6 +12,11 @@ param microsoftforms_name string = 'microsoftforms'
 // For the Forms Connector, enter an email
 param microsoftforms_displayName string
 
+@description('Your Azure DevOps Account Name')
+param azureDevOpsAccount string
+@description('Your Build Id')
+param buildId string
+
 
 param visualstudioteamservices_name string = 'visualstudioteamservices'
 param visualstudioteamservices_displayName string
@@ -135,8 +140,8 @@ resource triggerApproval_LogicApp 'Microsoft.Logic/workflows@2016-06-01' = {
                 method: 'post'
                 path: '/@{encodeURIComponent(\'Hugo\')}/_apis/build/builds'
                 queries: {
-                  account: 'charlenem'
-                  buildDefId: '213'
+                  account: azureDevOpsAccount
+                  buildDefId: buildId
                 }
               }
             }
