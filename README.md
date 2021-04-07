@@ -69,6 +69,9 @@ https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-a
 
     >Note: For the Azure DevOps connection, the project name has been hard coded as **Hugo** in the logicapps.bicep file (line 141). You can manually update the file yourself, or change it in the Logic App. Similarly, the Forms ID is hardcoded - when you validate your own connection, you can choose your own Microsoft Form (once you have created one!)
 
+## Closer Look
+
+Coming - a deeper dive into the Logic Apps and the Pipeline
 
 
 
