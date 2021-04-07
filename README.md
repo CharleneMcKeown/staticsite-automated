@@ -71,7 +71,11 @@ https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-a
 
 ## Closer Look
 
-Coming - a deeper dive into the Logic Apps and the Pipeline
+Coming soon: 
+
+1. A deeper dive into the Logic Apps and how to generate a Logic App ARM template and convert it for use with Bicep. 
+1. Static Web Apps - routes.json and Azure AD integration.
+1. A nice architecture visual!
 
 
 
