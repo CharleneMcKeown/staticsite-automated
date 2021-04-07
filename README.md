@@ -21,6 +21,8 @@ I thought it might be useful for others, so I created an [Azure Bicep](https://g
 - Two Logic Apps (One to handle the Form submission, the other to handle the user invitation email)
 - Three API connections to SaaS services: Office 365, Microsoft Forms and Azure DevOps
 
+I have used Bicep modules to try and keep things tidy, but I can definitely do with making them even neater (logicapps.bicep is a little messy but it works). These modules are imported into the main.bicep file. 
+
 ## Get started
 
 To deploy this, simply follow these steps:
