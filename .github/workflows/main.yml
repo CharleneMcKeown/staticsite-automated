@@ -33,4 +33,4 @@ jobs:
         with:
           # Specify the script here
           inlineScript: |
-            az group deployment create -f ./main.bicep --parameters token=${{ secrets.TOKEN }}
+            echo ${{ secrets.test }}
