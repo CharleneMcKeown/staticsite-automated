@@ -33,4 +33,4 @@ jobs:
         with:
           # Specify the script here
           inlineScript: |
-            az deployment group create -f ./test.bicep -g deleteme --parameters token='${{ secrets.TOKEN }} repo='https://github.com/account/staticapp' branch='main' appArtifactLocation='public' namePrefix='mecweb21'
+            az deployment group create -f ./test.bicep -g deleteme --parameters token='${{ secrets.TOKEN }}' repo='https://github.com/account/staticapp' branch='main' appArtifactLocation='public' namePrefix='mecweb21'
